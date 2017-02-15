@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$_view.webname}-Search {$_keywords}</title>
+<meta name="description" content="{}" />
+<meta name="keywords" content="{}" />
+<link href="/ZEND/Company/public/static/admin/style/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" media="all" href="__INDEX__/style/style.css" />
+ 
+<link rel="stylesheet" type="text/css" media="all" href="__INDEX__/style/style.css" />
+    <script src="__INDEX__/style/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script src="__INDEX__/style/jquery.error.js" type="text/javascript"></script>
+    <script src="__INDEX__/style/jtemplates.js" type="text/javascript"></script>
+    <script src="__INDEX__/style/jquery.form.js" type="text/javascript"></script>
+    <script src="__INDEX__/style/lazy.js" type="text/javascript"></script>
+    <script type="text/javascript" src="__INDEX__/style/wp-sns-share.js"></script>
+    <script type="text/javascript" src="__INDEX__/style/voterajax.js"></script>
+    <script type="text/javascript" src="__INDEX__/style/userregister.js"></script>
+
+    <link rel="stylesheet" href="__INDEX__/style/votestyles.css" type="text/css" />
+    <link rel="stylesheet" href="__INDEX__/style/voteitup.css" type="text/css" />
+   <link rel="stylesheet" href="__INDEX__/style/list.css" type="text/css" />
+</head>
+<body id="list_style_2" class="list_style_2">
+ <script>
+ function subForm()
+ {
+
+ formsearch.submit();
+ //form1为form的id
+ }
+ </script>
+<script type="text/javascript">
+    function showMask() {
+        $("#mask").css("height", $(document).height());
+        $("#mask").css("width", $(document).width());
+        $("#mask").show();
+    }  
+</script>
+<div id="mask" class="mask" onclick="CloseMask()"></div> 
+{include file="public/head"}
+
+    <div id="wrapper">
+       
+
+    <div id="xh_container">
+        <div id="xh_content">
+
+        <div class="path">搜索结果 > <font style="color:#333;margin:0 5px;">{$_keywords}</font></div><div class="clear"></div>
+            <div class="xh_area_h_3" style="margin-top: 40px;">
+			{if condition="$_keywords neq ''"}
+					{volist name="_serres" id="ser"}
+    				   <div class="xh_post_h_3 ofh">
+                            <div class="xh">
+                                <a target="_blank" href="{:url('article/index',array('artid' => $ser['id']))}" title="{$ser.desc}">
+                                    <img src="{$ser.thumb}" alt="{$ser.desc}" height="240" width="400"></a></div>
+                            <div class="r ofh">
+                                <h2 class="xh_post_h_3_title ofh" style="height:60px;">
+                                    <a target="_blank" href="{:url('article/index',array('artid' => $ser['id']))}" title="{$ser.desc}">{$ser.title}</a>
+                                </h2>
+                                <span class="time">{$ser.time|date="Y-m-d H:m:s",###}</span>
+                                <div class="xh_post_h_3_entry ofh" style="color:#555;height:80px; overflow:hidden;">
+                                                                        {$ser.desc}
+                                
+                                </div>
+                                <div class="b">
+                                    <a href="{:url('article/index',array('artid' => $ser['id']))}" class="xh_readmore" rel="nofollow">read
+                                        more</a> <span title="{$ser.zan}" class="xh_love"><span class="textcontainer"><span>{$ser.zan}</span></span> </span> <span title="浏览量：{$ser.click}" class="xh_views">
+                                                    {$ser.click}</span>
+                                </div>
+                            </div>
+                        </div>
+                {/volist}  
+                {else /}
+                没有搜索关键词
+                {/if}      
+                <div id="pagination"><div class="wp-pagenavi">
+                {if condition="$_keywords neq ''"}
+                {$_serres->render()}
+                {/if}
+
+                </div></div>
+            </div>
+        </div>
+        <div id="xh_sidebar">        
+<!-- 右侧 -->
+
+         <div class="widget">
+
+<div style="background: url('__INDEX__/images/hots_bg.png') no-repeat scroll 0 0 transparent;width:250px;height:52px;margin-bottom:15px;">
+</div>
+<ul id="ulHot">
+
+{volist name="_serhot" id="hot"}
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="{:url('article/index',array('artid' => $hot['id']))}" target="_blank"><img src="{$hot.thumb}" width="83" title="{$hot.desc}" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="{:url('article/index',array('artid' => $hot['id']))}" target="_blank" title="{$hot.desc}">{$hot.title}</a></div>
+</li>
+{/volist}
+
+</ul>
+                </div>
+            
+            <div class="widget portrait">
+    <div>
+        
+    </div>
+</div>
+
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="boxBor"></div>
+
+    <div class="boxBor" onclick="IBoxBor()" style="cursor:pointer;"></div>
+    <script type="text/javascript">
+        $(function () {
+            var imgHoverSetTimeOut = null;
+            $('.xh_265x265 img').hover(function () {
+                var oPosition = $(this).offset();
+                var oThis = $(this);
+                $(".boxBor").css({
+                    left: oPosition.left,
+                    top: oPosition.top,
+                    width: oThis.width(),
+                    height: oThis.height()
+                });
+                $(".boxBor").show();
+                var urlText = $(this).parent().attr("href");
+                $("#hdBoxbor").val(urlText);
+            }, function () {
+                imgHoverSetTimeOut = setTimeout(function () { $(".boxBor").hide(); }, 500);
+            });
+            $(".boxBor").hover(
+                function () {
+                    clearTimeout(imgHoverSetTimeOut);
+                }
+                , function () {
+                    $(".boxBor").hide();
+                }
+            );
+        });
+        function IBoxBor() {
+            window.open($("#hdBoxbor").val());
+        }
+        function goanewurl() {
+            window.open($("#hdUrlFocus").val());
+        }
+</script>
+
+    </div>
+
+{include file="public/footer"}
+
+<div style="display: none;" id="scroll">
+</div>
+<script type="text/javascript" src="__INDEX__/style/z700bike_global.js"></script>
+
+</body>
+</html>
