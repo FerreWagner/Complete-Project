@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title><?php echo $this->_config['webname'];?></title>
+<link rel="stylesheet" type="text/css" href="style/basic.css">
+<link rel="stylesheet" type="text/css" href="style/details.css">
+<script type="text/javascript" src="config/static.php?id=<?php echo $this->_vars['id'];?>&type=details"></script>
+</head>
+<body>
+
+<?php error_reporting(E_ALL & ~E_NOTICE)?>
+    <?php $_tpl->create('header.tpl')?>
+    <div id="details">
+        <h2>当前位置&gt;<?php echo $this->_vars['nav'];?></h2>
+        <h4><?php echo $this->_vars['titlec'];?></h4>
+        <div class="d1">发布时间： <?php echo $this->_vars['date'];?> 来源： <?php echo $this->_vars['source'];?> 作者： <?php echo $this->_vars['author'];?> 点击量：<?php echo $this->_vars['count'];?>次  </div>
+        <div class="d2"><?php echo $this->_vars['info'];?></div>
+        <div class="d3"><?php echo $this->_vars['content'];?></div>
+        <div class="d4">TAB标签,</div>
+    </div>
+    
+    <div id="sidebar">
+            <div class="right">
+            <h2>本类推荐</h2>
+            <ul>
+                <li><a href=""><em>16-08</em>【时评】维护主权完整，这很重要！ </a></li>
+                <li><a href=""><em>15-12</em>【时评】“垃圾短信”，别动不动就</a></li>
+                <li><a href=""><em>16-02</em>【时评】通信“实名时代”，用行动告慰</a></li>
+                <li><a href=""><em>16-01</em>【时评】如此网络直播，是到了该整治的</a></li>
+                <li><a href=""><em>16-07</em>【时评】整治黑导游得下点真功夫</a></li>
+                <li><a href=""><em>16-02</em>【时评】网络的恶俗炒作之根源...</a></li>
+                <li><a href=""><em>16-09</em>【时评】“全民挖玉”造就不了富翁</a></li>
+                <li><a href=""><em>15-09</em>【时评】持证上岗的网络直播还会低俗吗</a></li>
+                <li><a href=""><em>16-01</em>【杂谈】红军长征的胜利是信仰的胜利！</a></li>
+            </ul>
+            </div>
+            <div class="right">
+            <h2>本类热点</h2>
+            <ul>
+                <li><a href=""><em>16-08</em>【时评】维护主权完整，这很重要！ </a></li>
+                <li><a href=""><em>15-12</em>【时评】“垃圾短信”，别动不动就</a></li>
+                <li><a href=""><em>16-02</em>【时评】通信“实名时代”，用行动告慰</a></li>
+                <li><a href=""><em>16-01</em>【时评】如此网络直播，是到了该整治的</a></li>
+                <li><a href=""><em>16-07</em>【时评】整治黑导游得下点真功夫</a></li>
+                <li><a href=""><em>16-02</em>【时评】网络的恶俗炒作之根源...</a></li>
+                <li><a href=""><em>16-09</em>【时评】“全民挖玉”造就不了富翁</a></li>
+                <li><a href=""><em>15-09</em>【时评】持证上岗的网络直播还会低俗吗</a></li>
+                <li><a href=""><em>16-01</em>【杂谈】红军长征的胜利是信仰的胜利！</a></li>
+            </ul>
+            </div>
+            <div class="right">
+            <h2>本类图文</h2>
+            <ul>
+                <li><a href=""><em>16-08</em>【时评】维护主权完整，这很重要！ </a></li>
+                <li><a href=""><em>15-12</em>【时评】“垃圾短信”，别动不动就</a></li>
+                <li><a href=""><em>16-02</em>【时评】通信“实名时代”，用行动告慰</a></li>
+                <li><a href=""><em>16-01</em>【时评】如此网络直播，是到了该整治的</a></li>
+                <li><a href=""><em>16-07</em>【时评】整治黑导游得下点真功夫</a></li>
+                <li><a href=""><em>16-02</em>【时评】网络的恶俗炒作之根源...</a></li>
+                <li><a href=""><em>16-09</em>【时评】“全民挖玉”造就不了富翁</a></li>
+                <li><a href=""><em>15-09</em>【时评】持证上岗的网络直播还会低俗吗</a></li>
+                <li><a href=""><em>16-01</em>【杂谈】红军长征的胜利是信仰的胜利！</a></li>
+            </ul>
+            </div>
+    </div>
+    <?php $_tpl->create('footer.tpl')?>
+    
+</body>
+</html>
