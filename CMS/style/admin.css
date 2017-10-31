@@ -1,0 +1,313 @@
+@CHARSET "UTF-8";
+body,h1,h2,h3,p,form,ul,ol,li,dl,dt,dd{
+	padding:0;
+	margin:0;
+}
+body{
+	background:#fff;
+	font-size:12px;
+}
+ul,ol{
+	list-style-type:none;
+}
+
+#top{
+	background:#535353;
+}
+#top h1{
+	background:url(../images/zhan6.jpg);
+	text-indent:-9999px;
+	float:left;
+	background-size:100%;
+	width:200px;
+	height:120px;
+	font-size:12px;
+	color:#fff;
+}
+#top ul{
+	padding:80px 0 0 10px;
+	float:left;
+}
+#top ul li{
+	float:left;
+	padding:0 0 0 10px;
+}
+#top ul li a{
+	display:block;
+	background:url(../images/zhan11.jpg) no-repeat left bottom;
+	font-size:14px;
+	font-weight:bold;
+	text-decoration:none;
+	line-height:34px;
+	text-align:center;
+	color:#c4c4c4;
+	width:70px;
+	height:44px;
+}
+#top ul li a.selected{
+	background:#ff8040;
+	color:#ffffff;
+}
+#top p{
+	float:right;
+	padding:25px 20px 0 0;
+	color:#fff;
+}
+#top p a{
+	color:#fff;
+	text-decoration:none;
+}
+#top p a:hover{
+	text-decoration:underline;
+	color:#ff8000;
+}
+#sidebar{
+	background:#dfdfdf url(../images/zhan111.jpg) repeat-y right;
+}
+#sidebar dl{
+	padding:20px;
+	text-indent:2px;
+}
+#sidebar dl dt{
+	font-size:14px;
+	color:#3b6ea5;
+	font-weight:bold;
+	border-bottom:1px solid silver;
+	padding:5px 0;
+}
+#sidebar dl dd{
+	height:22px;
+	line-height:22px;
+}
+#sidebar dl dd a{
+	color:#333;
+	text-decoration:none;
+}
+#sidebar dl dd a:hover{
+	text-decoration:underline;
+}
+#main{
+	background:url(../images/zhan11.jpg) no-repeat;
+	background-size:1000%;
+}
+#main div.map{
+	padding:15px;
+	color:#d0d0d0;
+}
+#main div.map b{
+	color:#8080ff;
+}
+#main table{
+	width:95%;
+	margin:0 auto;
+	padding:20px 0 0 0;
+	text-align:center;
+	font-size:13px;
+}
+#main table tr{
+	background:#fff;
+}
+#main table tr:hover{
+	background:#d8ebeb;
+}
+#main table th,#main table td{
+	height:30px;
+	line-height:30px;
+	color:#333;
+}
+#main table th{
+	background:#eef3f7;
+	border-bottom:1px solid #d5dfe8;
+	font-weight:normal;
+}
+#main table td{
+	border-bottom:1px solid #eee;
+}
+#main table.content td{
+	text-align:left;
+	padding:5px;
+}
+#main table.content td span.blue{
+	color:#54a7a7;
+}
+#main table.content td input.text{
+	width:440px;
+}
+#main table.content td input.small{
+	width:100px;
+}
+#main table.content td select{
+	border:1px solid silver;
+	width:150px;
+	height:22px;
+}
+#main table.content td select optgroup{
+	font-size:12px;
+}
+#main table.content td select option{
+	padding:0 0 0 20px;
+	font-size:10px;
+}
+#main table.content td textarea{
+	margin:0;
+	width:440px;
+	height:80px;
+	overflow:auto;
+}
+#main table.content td span.middle{
+	vertical-align:top;
+}
+#main table tr.ckeditor{
+}
+#main a{
+	color:#3b6ea5;
+	text-decoration:none;
+}
+#main a:hover{
+	text-decoration:underline;
+}
+#main p.center{
+	text-align:center;
+	padding:25px;
+}
+#main form tr td input.text{
+	width:220px;
+	height:19px;
+	background:#fff;
+	border:1px solid silver;
+}
+#main form tr td input.sort{
+	width:40px;
+	text-align:center;
+}
+#main form.left table{
+	text-align:left;
+	background:#fff;
+	padding:20px;
+	font-size:14px;
+	margin:20px 20px 0 30px;;
+}
+#main form.left select{
+	width:100px;
+	height:19px;
+	background:#fff;
+}
+#main form textarea{
+	font-size:12px;
+	width:220px;
+	height:100px;
+	background:#fff;
+	border:1px solid silver;
+	margin:0 0 0 70px;
+}
+
+#main form input.submit{
+	cursor:pointer;
+	margin:0 0 0 47px;
+}
+#main form input.level{
+	margin:0 0 0 70px;
+}
+#main ol{
+	padding:5px 0 0 30px;
+	height:28px;
+}
+#main ol li{
+	float:left;
+	padding:0 10px 0 0;
+	height:30px;
+}
+#main ol li a{
+	padding:6px;
+	display:block;
+}
+#main ol li a:hover{
+	background:#eee;
+}
+#main ol li a.selected{
+	background:#3b6ea5;
+	color:#fff;
+}
+#adminLogin{
+	width:400px;
+	margin:100px auto;
+	color:#383838;
+	font-size:14px;
+}
+#adminLogin fieldset{
+	padding:20px;
+}
+#adminLogin legend{
+	font-size:16px;
+	font-weight:bold;
+}
+#adminLogin label{
+	display:block;
+	margin:5px;
+}
+#adminLogin label.t{
+	border:#999;
+	text-indent:56px;
+}
+#adminLogin label input.text{
+	width:220px;
+	height:27px;
+	border:1px solid #666;
+	background:#eee;
+}
+#adminLogin input.submit{
+	margin:5px 0 0 60px;
+	cursor:pointer;
+}
+#adminLogin label img{
+	margin: 5px 0 0 56px;
+	cursor:pointer;
+}
+
+#page{
+	text-align:center;
+	padding:10px;
+	color:#00a4a4;
+}
+#page a{
+	border:1px solid silver;
+	padding:2px 5px;
+	margin:0 6px;
+}
+#page a:hover,#page span.me{
+	color:#fff;
+	border:1px solid #000;
+	background:#ff9664;
+	text-decoration:none;
+	font-weight:bold;
+}
+#page span.disabled{
+	border:1px solid #ccc;
+	padding:2px 5px;
+	margin:0 6px;
+	color:#ccc;
+}
+#page span.me{
+	padding:2px 5px;
+	margin:0 2px;
+}
+#page select.select{
+	width:120px;
+	background:#fff;
+	border:1px solid #ccc;
+}
+#page select.select optgroup{
+	font-style:normal;
+}
+#main table.user{
+	text-align:left;
+}
+#main table.user tr td select{
+	width:220px;
+	height:22px;
+	border:1px solid #ccc;
+	background:#fff;
+}
+#main table.user tr td img.face{
+	margin:0 0 0 60px;
+}
