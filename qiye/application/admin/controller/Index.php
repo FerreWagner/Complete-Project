@@ -8,4 +8,9 @@ class Index extends Base
     {
         return $this->view->fetch('index');
     }
+    
+    public function welcome()
+    {
+        return $this->view->fetch('welcome');
+    }
 }
