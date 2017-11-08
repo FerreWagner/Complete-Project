@@ -6,6 +6,9 @@ class Index extends Base
 {
     public function index()
     {
+        //防止未登录
+        $this->isLogin();
+        
         return $this->view->fetch('index');
     }
     
