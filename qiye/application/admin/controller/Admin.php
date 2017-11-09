@@ -2,42 +2,65 @@
 
 namespace app\admin\controller;
 
-use think\Controller;
 use think\Request;
+use app\admin\common\Base;
+use app\admin\model\Admin as AdminModel;
 
-class Admin extends Controller
+class Admin extends Base
 {
     /**
-     * 显示资源列表
+     * 显示管理员首页
      *
      * @return \think\Response
      */
     public function index()
     {
         //
+        $admin = AdminModel::get(['username' => 'admin']);
+        $this->view->assign('admin', $admin);
+        
         return $this->view->fetch('admin_list');
         
     }
 
     /**
-     * 显示创建资源表单页.
+     * 渲染编辑模板页.
      *
      * @return \think\Response
      */
-    public function create()
+    public function edit(Request $request)
     {
-        //
+        $admin = AdminModel::get($request->param('id'));
+        $this->view->assign('admin', $admin);
+        
+        return $this->view->fetch('admin_edit');
     }
 
-    /**
-     * 保存新建的资源
-     *
-     * @param  \think\Request  $request
-     * @return \think\Response
-     */
-    public function save(Request $request)
+    //执行更新操作
+    public function update(Request $request)
     {
-        //
+        if ($request -> isAjax(true)){
+
+            //获取提交的数据,自动过滤一下空值
+            $data = array_filter($request->param());
+
+            //设置更新条件
+            $map = ['is_update' => $data['is_update']];
+
+            //更新用户表
+            $res = AdminModel::update($data, $map);
+
+            //更新成功的提示信息
+            $status = 1;
+            $message = '更新成功';
+
+            //如果更新失败
+            if (is_null($res)) {
+                $status = 0;
+                $message = '更新失败';
+            }
+        }
+        return ['status'=>$status, 'message'=>$message];
     }
 
     /**
@@ -51,28 +74,6 @@ class Admin extends Controller
         //
     }
 
-    /**
-     * 显示编辑资源表单页.
-     *
-     * @param  int  $id
-     * @return \think\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * 保存更新的资源
-     *
-     * @param  \think\Request  $request
-     * @param  int  $id
-     * @return \think\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
 
     /**
      * 删除指定资源

@@ -56,7 +56,7 @@ class Login extends Base
             
             //存储session
             Session::set('user_id', $user);
-            Session::set('user_info', $data);
+            Session::set('user_info', $admin->toArray());
         }
         
         return ['status' => $status, 'message' => $message];
