@@ -51,12 +51,12 @@ class Admin extends Base
             $res = AdminModel::update($data, $map);
 
             //更新成功的提示信息
-            $status = 1;
+            $status  = 1;
             $message = '更新成功';
 
             //如果更新失败
             if (is_null($res)) {
-                $status = 0;
+                $status  = 0;
                 $message = '更新失败';
             }
         }
