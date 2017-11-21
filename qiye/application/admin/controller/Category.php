@@ -2,10 +2,11 @@
 
 namespace app\admin\controller;
 
-use think\Controller;
+use app\admin\common\Base;
 use think\Request;
+use app\admin\model\Category as CategoryModel;
 
-class Category extends Controller
+class Category extends Base
 {
     /**
      * 显示资源列表
@@ -14,7 +15,13 @@ class Category extends Controller
      */
     public function index()
     {
-        //
+        //1、获取分类信息
+        $cate = CategoryModel::getCate();
+
+        //2、模板赋值
+        $this->view->assign('cate', $cate);
+
+        //3、渲染
         return $this->view->fetch('category_list');
     }
 

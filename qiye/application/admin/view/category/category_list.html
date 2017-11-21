@@ -17,12 +17,9 @@
                     <div class="layui-input-inline" style="width:120px;text-align: left">
                         <select name="fid">
                             <option value="0">顶级分类</option>
-                            <option value="新闻">新闻</option>
-                            <option value="新闻子类1">--新闻子类1</option>
-                            <option value="新闻子类2">--新闻子类2</option>
-                            <option value="产品">产品</option>
-                            <option value="产品子类1">--产品子类1</option>
-                            <option value="产品子类2">--产品子类2</option>
+                            {volist name='cate' id='vo'}
+                            <option value="{$vo.id}">{$vo.cate_name}</option>
+                            {/volist}
                         </select>
                     </div>
                     <div class="layui-input-inline" style="width:120px">
@@ -56,18 +53,19 @@
                     </tr>
                 </thead>
                 <tbody id="x-link">
+                {volist name='cate' id='vo'}
                     <tr>
                         <td>
                             <input type="checkbox" value="1" name="">
                         </td>
                         <td>
-                            1
+                            {$vo.id}
                         </td>
                         <td>
-                            1
+                            {$vo.cate_order}
                         </td>
                         <td>
-                            新闻
+                            {$vo.cate_name}
                         </td>
                         <td class="td-manage">
                             <a title="编辑" href="javascript:;" onclick="cate_edit('编辑','cate-edit.html','4','','510')"
@@ -80,6 +78,7 @@
                             </a>
                         </td>
                     </tr>
+                {/volist}
                 </tbody>
             </table>
         </div>

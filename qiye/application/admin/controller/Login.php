@@ -31,7 +31,8 @@ class Login extends Base
     {
         //设置初始json值
         $status = 0;
-        
+
+
         //获取表单数据
         $data = $request->param();
         $user = $data['username'];
