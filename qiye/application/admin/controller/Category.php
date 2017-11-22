@@ -18,8 +18,10 @@ class Category extends Base
         //1、获取分类信息
         $cate = CategoryModel::getCate();
 
+        $cate_list = CategoryModel::paginate(2);
+        $count     = CategoryModel::count();
         //2、模板赋值
-        $this->view->assign('cate', $cate);
+        $this->view->assign(['cate' => $cate, 'cate_list' => $cate_list, 'count' => $count]);
 
         //3、渲染
         return $this->view->fetch('category_list');
