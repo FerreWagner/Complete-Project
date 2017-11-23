@@ -18,7 +18,7 @@ class Category extends Base
         //1、获取分类信息
         $cate = CategoryModel::getCate();
 
-        $cate_list = CategoryModel::paginate(2);
+        $cate_list = CategoryModel::paginate(6);
         $count     = CategoryModel::count();
         //2、模板赋值
         $this->view->assign(['cate' => $cate, 'cate_list' => $cate_list, 'count' => $count]);
@@ -32,9 +32,24 @@ class Category extends Base
      *
      * @return \think\Response
      */
-    public function create()
+    public function create(Request $request)
     {
         //
+        $status = 1;
+        $message = '添加成功';
+
+        //添加数据
+        $res = CategoryModel::create([
+            'cate_name' => $request->param('cate_name'),
+            'pid'       => $request->param('pid'),
+        ]);
+
+        //添加失败处理
+        if (is_null($res)){
+            $status = 0;
+            $message = '添加失败';
+        }
+        return ['status' => $status, 'message' => $message, 'res' => $res->toJson()];
     }
 
     /**

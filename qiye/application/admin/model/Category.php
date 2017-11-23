@@ -8,7 +8,9 @@ use think\model\Collection;
 class Category extends Model
 {
     //
-
+    protected $insert = [
+        'cate_order' => 0,   //分类排序的默认值设置为0
+    ];
     /**
      * @param int $pid 当前类父ID
      * @param array $result 引用返回值
