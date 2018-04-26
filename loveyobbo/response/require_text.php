@@ -12,7 +12,7 @@ class require_text{
                                                 【BBO星人的远征】是一个致力于传递、推送丰富的金属乐相关内容的公众号。BBO星人们在创始人loveyobbo的带领下，多年来一贯坚持信息资源共享、平等友爱、热爱音乐三大核心意志，欢迎各路音乐爱好者来进入我们的小乐园。\n\n
                                                  现阶段，受制于关注数量以及开启时间的限制，很多界面和功能都无法实现。\n
                                                 我们会尽快完善哒~\n\n
-                BBO�星港坐标\n
+                BBO�星港坐标\n
                                                 微博：www.weibo.com/bboism\n
                                                 贴吧：tieba.baidu.com/loveyobbo\n
                                                  网易云：music.163.com/#/user/home?id=440225096\n
@@ -37,6 +37,7 @@ class require_text{
         switch ($_key)//TODO 关键字回复
             {
             	case "faith":
+            	    echo 1;
             	    $content = '<a href="https://www.baidu.com">百度测试</a>';
             	    break;
             	case strtolower('BBO'):

@@ -2,7 +2,7 @@
 define("TOKEN", "bbo_big_sister_head");
 date_default_timezone_set('PRC'); 
 function __autoload($_className){   //自动加载
-    $_filePath = './response/'.strtolower($_className).'.php';
+    $_filePath = 'response/'.strtolower($_className).'.php';
     if (file_exists($_filePath)){
         include_once $_filePath;
     }else {
@@ -53,6 +53,9 @@ class wechatCallbackapiTest
     public function responseMsg()
     {
         $postStr = $GLOBALS["HTTP_RAW_POST_DATA"];//获取微信端发送的xml数据
+        if(!$postStr){
+            $postStr = file_get_contents("php://input");    //修复了php7环境移除了HTTP_RAW_POST_DATA这个全局变量的BUG
+        }
         if (!empty($postStr)){
             //将$postStr变量进行解析，并赋予$postObj
             $postObj = simplexml_load_string($postStr, 'SimpleXMLElement', LIBXML_NOCDATA);
