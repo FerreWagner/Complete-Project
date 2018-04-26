@@ -1,0 +1,28 @@
+@CHARSET "UTF-8";
+body{
+	width:1306px;
+}
+#face h3{
+	width:100%;
+	font:1em;
+	font-family:微软雅黑;
+	margin:10px 0 10px 0;
+	padding:10px 0 10px 0;
+	height:40px;
+	line-height:30px;
+	text-align:center;
+	background-color:silver;
+	float:left;
+}
+#face dl{
+	width:80%;
+	margin:0 auto;
+}
+#face dl dd{
+	text-center:center;
+	float:left;
+}
+#face dl dd img{
+	cursor:pointer;
+}
+

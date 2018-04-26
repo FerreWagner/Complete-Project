@@ -1,0 +1,260 @@
+@CHARSET "UTF-8";
+body{
+	width:1300px;
+	height:100%;
+	background:url(../pic/geek1.jpg);
+	background-size:100% 100%; 
+	background-attachment: fixed;
+	
+}
+#article{
+	width:1260px;
+	font-size:18px;
+	color:#fff;
+	font-family:微软雅黑;
+	margin:0 0 0 14px;
+}
+h3{
+	padding:0 0 0 16px;
+}
+h4{
+	height:0;
+}
+
+
+#article #article1{
+	position:absolute;
+	width:900px;
+	top:380px;
+	left:320px;
+	min-height:1070px;
+	border:1px solid #804040;
+	font-size:16px;
+	background:#ffffff;
+	color:#404040;
+	padding:4px 4px 0 4px;
+	margin:0 0 100px 0;
+	font-family:微软雅黑;
+}
+#article h2{
+	text-indent:0;
+	text-align:center;
+	font-family:微软雅黑;
+	height:40px;
+	background:#202020;
+	margin:0 0 0 0;
+	padding:10px;
+	border-top:1px solid silver;
+	border-bottom:1px solid silver;
+}
+#article #subject{
+	position:absolute;
+	top:380px;
+	border:1px solid silver;
+	text-align:center;
+	margin:4px 4px 4px 26px;
+	padding:4px 4px 4px 4px;
+}
+#article #subject h{
+	font-size:14px;
+}
+#article #subject a{
+	cursor:pointer;
+}
+#content{
+	position:absolute;
+	top:280px;
+	left:290px;
+	align:center;
+	width:910px;
+	padding:20px 0 0 0;
+}
+#content h{
+	font-size:14px;
+}
+h6{
+	padding:0 0 0 120px;
+	font-weight:normal;
+}
+
+th{
+	padding:6px;
+}
+
+.user1{
+	width:900px;
+	border-bottom:1px solid silver;
+	background:url(../pic/tou2.jpg) no-repeat left center;
+	text-indent:40px;
+	background-size:3%;
+	color:#ffffff;
+	padding:20px 0 6px 0;
+	margin:0 0 0 30px;
+	height:30px;
+	line-height:20px;
+}
+.user1 span{
+	float:right;
+	color:#b3ffb3;
+}
+
+
+h6#hate{
+	height:0;
+	margin:0;
+	padding:6px 0 0 0;
+	width:840px;
+	border-bottom:1px solid #c8c8c8;
+}
+.ree{
+	width:840px;
+	height:auto;
+	padding:40px 0 20px 14px;
+}
+.ree h{
+	color:#919191;
+	padding:28px;
+	background:url(../pic/tou2.jpg) no-repeat left center;
+	background-size:6%;
+}
+.ree h span{
+	float:right;
+	color:#408080;
+}
+.ree h span a{
+	font-size:13px;
+	color:#1389ff;
+}
+.ree h span a:hover{
+	color:#31bcff;
+}
+table{
+	margin:12px 0 0 0;
+}
+table a{
+	color:#003a75;
+	cursor:pointer;
+	font-size:8px;
+	font-weight:normal;
+}
+table th{
+	margin:0 2px 0 2px;
+}
+table th.latelast{
+	font-size:14px;
+	text-align:left;
+	margin:0 2px 0 2px;
+}
+
+.detail{
+	line-height:150%;
+	font-size:14px;
+	padding:0 20px 0 20px;
+}
+.detail a{
+	text-decoration:none;
+	color:#408080;
+}
+.detail a:hover{
+	color:#004080;
+	text-decoration:underline;
+}
+.detail p{
+	width:900px;
+	overflow:hidden;
+}
+#article p.line{
+	width:95%;
+	margin:50px 0 0 18px;
+	padding:20px 0 0 0;
+	clear:both;
+	border-top:1px solid #858585;
+}
+#article1 p.autograph{
+	width:50%;
+	padding:16px 0 16px 0;
+	color:#666;
+	font-weight:bold;
+	border-top:1px solid #aaaaaa;
+	border-bottom:1px solid #aaaaaa;
+	margin:40px 0 0 0;
+}
+.read{
+	font-size:14px;
+	color:#757575;
+}
+.autograph1{
+	font-size:14px;
+	font-weight:bold;
+	color:#808080;
+}
+#article form{
+	border:1px solid #f0e1e1;
+}
+#article dl dd div#ubb{
+	padding:0 0 10px 0;
+	top:478px;
+	width:660px;
+	height:26px;
+	background-image:linear-gradient(to left,#aaf,#eee);
+	border:1px solid silver;
+	border-bottom:none;
+	margin:0 0 0 40px;
+}
+#article dl dd div#ubb img{
+	display:block;
+	float:left;
+	padding:0 0 0 10px;
+	cursor:pointer;
+}
+
+
+#article dl dd textarea{
+	width:650px;
+	height:300px;
+	background:#fff;
+	overflow-x:scroll;
+	overflow-y:scroll;
+	padding:8px 5px 0 5px;
+	font-family:微软雅黑;
+	font-size:16px;
+	resize:none;
+	margin:0 0 0 40px;
+}
+#article dl dd label{
+	cursor:pointer;
+}
+
+#article dl dd div#font{
+	display:none;
+	position:absolute;
+	width:170px;
+	height:50px;
+	background:#eee;
+	border:solid 1px #959595;
+	padding:8px;
+	line-height:20px;
+	top:440px;
+}
+
+dd input{
+	color:#6c6cb7;
+}
+#article dl dd div#font strong{
+	font-weight:normal;
+	background:#fff;
+	border:1px solid #ccc;
+	cursor:pointer;	
+}
+#article dl dd#q a{
+	text-decoration:none;
+}
+.ree{
+	margin:10px 10px 10px 15px;
+	font-size:14px;
+}
+#footer3{
+	font-size:14px;
+	text-align:center;
+	color:#000000;
+}

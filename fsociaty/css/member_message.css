@@ -1,0 +1,106 @@
+@CHARSET "UTF-8";
+body{
+	font-family:微软雅黑;
+	background:url(../pic/night21.jpg) no-repeat center;
+	background-size:100%;
+	background-attachment: fixed;
+	opacity:0.96;
+}
+h1{
+	font-family:微软雅黑;
+}
+#member{
+	width:1300px;
+	height:1000px;
+	border:4px ridge silver;
+	font-size:12px;
+	color:#c0c0c0;
+}
+input{
+	border:1px solid silver;
+	box-shadow: 0 0 6px #9ecaed;
+}
+#member h2{
+	text-indent:0;
+	text-align:center;
+	height:30px;
+	line-height:30px;
+	background:#413425;
+	font-family:微软雅黑;
+	padding:10px;
+}
+#member #member_sidebar{
+	width:300px;
+	height:900px;
+	margin:30px;
+	border:1px solid silver;
+	float:left;
+}
+#member #member_sidebar dl{
+	width:250px;
+	margin:60px auto;
+}
+#member #member_sidebar dt{
+	height:50px;
+	line-height:40px;
+	font-family:微软雅黑;
+	background-color:#222226;
+	color:#fff;
+	text-align:center;
+}
+#member #member_sidebar dd{
+	height:50px;
+	line-height:50px;
+	font-family:微软雅黑;
+	background-color:#404046;
+	margin:0;
+	color:#fff;
+	text-align:center;
+}
+#member #member_sidebar dd a{
+	display:block;
+}
+#member #member_sidebar dd a:hover{
+	background:#9f9fff;
+	color:#fff;
+}
+#member #member_main{
+	width:900px;
+	height:900px;
+	margin:30px 20px 0 0;
+	border:1px solid silver;
+	float:right;
+}
+#member #member_main table{
+	width:90%;
+	margin:40px auto;
+	text-align:center;
+	background:#171717;
+	border:4px solid #242424;
+}
+
+#member #member_main table th,#member #member_main table td{
+	height:35px;
+	line-height:28px;
+	border:1px solid;
+	border-color:#484286 #8880c4;
+	
+}
+#member #member_main table td a{
+	text-decoration:none;
+	color:#bddfdf;
+}
+#member #member_main table td a:hover{
+	text-decoration:underline;
+}
+#member #member_main tr td input{
+	cursor:pointer;
+	text-align:center;
+}
+#member #member_main tr td input.subb{
+	background:#408080;
+	color:#fff;
+	height:20px;
+	margin:10px 0 20px 0;
+}
+

@@ -1,0 +1,67 @@
+@CHARSET "UTF-8";
+body{
+	width:auto;
+}
+
+#message h3{
+	font-family:微软雅黑;
+	width:90%;
+	margin:10px auto;
+	height:60px;
+	line-height:60px;
+	text-align:center;
+	border:1px ridge silver;
+	color:#555;
+	background:#abd3bd;
+}
+#message h4{
+	font-family:微软雅黑;
+}
+#message dl{
+	width:90%;
+	margin:0 auto;
+}
+#message dl dd{
+	margin:5px 0;
+}
+#message dl dd input.text{
+	width:400px;
+	height:40px;
+	background:#fff;
+	border:1px solid #b19ad8;
+	font-size:14px;
+	font-weight:bold;
+	color:#a244ff;
+	font-size:18px;
+	font-family:微软雅黑;
+	font-style:italic;
+}
+#message dl dd textarea{
+	width:80%;
+	height:300px;
+	background:#fff;
+	border:1px solid #baa5dc;
+	overflow-y:scroll;
+	color:#8000ff;
+	font-family:微软雅黑;
+}
+#message dl dd img#code{
+	position:relative;
+	top:8px;
+	cursor:pointer;
+}
+#message dl dd input.submit{
+	cursor:pointer;
+	margin:30px 0 0 0;
+}
+
+#message dl dd select{
+	width:80px;
+}
+#message dl dd select option{
+	background:url(../pic/newuser/zan2.jpg) no-repeat left center;
+	padding:0 0 0 15px;
+}
+#message dl dd img{
+	padding:10px 0 0 0;
+}

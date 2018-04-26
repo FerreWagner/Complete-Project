@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+#member #member_main dl{
+	width:90%;
+	margin:10px auto;
+	text-align:center;
+	background:#11101f;
+	margin-bottom:0px;
+	line-height:40px;
+	border:2px solid #001c0e;
+}
+#member #member_main dl dd{
+	margin:5px;
+	border:1px solid;
+	margin:20px 0 20px 0;
+	padding:15px 0 15px 0;
+}
+#member #member_main dl dd input{
+	cursor:pointer;
+	background:#408080;
+	color:#fff;
+	font-family:微软雅黑;
+	display:inline-block;
+}

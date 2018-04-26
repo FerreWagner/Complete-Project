@@ -1,0 +1,120 @@
+@CHARSET "UTF-8";
+body{
+	background:url(../pic/night21.jpg) no-repeat center;
+	background-size:100%;
+	background-attachment: fixed;
+	font-family:微软雅黑;
+	opacity:0.96;
+	
+}
+input{
+	border:1px solid silver;
+	box-shadow: 0 0 6px #9ecaed;
+}
+button{
+	
+}
+#member{
+	width:1300px;
+	min-height:1800px;
+	border:4px ridge silver;
+	font-size:12px;
+	color:#c0c0c0;
+	font-weight:bold;
+}
+#member h2{
+	text-indent:0;
+	text-align:center;
+	height:30px;
+	line-height:30px;
+	background:#223237;
+	font-family:微软雅黑;
+	padding:10px;
+	color:#eaeaea;
+}
+#member #member_sidebar{
+	width:300px;
+	min-height:800px;
+	margin:30px;
+	border:1px solid silver;
+	float:left;
+}
+#member #member_sidebar dl{
+	width:250px;
+	margin:60px auto;
+}
+#member #member_sidebar dt{
+	height:40px;
+	line-height:40px;
+	font-family:微软雅黑;
+	background-color:#222226;
+	color:#fff;
+	text-align:center;
+}
+#member #member_sidebar dd{
+	height:40px;
+	line-height:40px;
+	font-family:微软雅黑;
+	background-color:#404046;
+	margin:0;
+	color:#fff;
+	text-align:center;
+}
+#member #member_sidebar dd a{
+	display:block;
+}
+#member #member_sidebar dd a:hover{
+	background:#9797ff;
+}
+#member #member_main{
+	width:900px;
+	height:auto;
+	margin:30px 20px 0 0;
+	border:1px solid silver;
+	float:right;
+}
+#member #member_main dl{
+	width:800px;
+	margin:30px auto;
+	font-sezi:14px;
+	font-family:微软雅黑;
+}
+#member #member_main dl dd{
+	padding:20px 0;
+	border-bottom:1px ridge silver;
+}
+#member #member_main dl dd p textarea{
+	width:240px;
+	height:80px;
+	resize:none;
+	border:1px solid silver;
+	padding:2px;
+	margin:4px 0 0 0;
+}
+#code{
+	position:relative;
+	top:6px;
+	cursor:pointer;
+}
+#member #member_main dl dd input.submit{
+	width:60px;
+	height:22px;
+	padding:0 0 2px 0;
+	border:1px solid #c4b384;
+	background:#1c0000;
+	color:#fff;
+	cursor:pointer;
+}
+#member #member_main dl dd input.text{
+	width:180px;
+	height:19px;
+	border:1px solid black;
+	background:#ffffff;
+}
+#member_main table tr#qiangshi{
+	font-size:16px;
+}
+#member_main table tr td{
+	text-align:center;
+	font-weight:normal;
+}

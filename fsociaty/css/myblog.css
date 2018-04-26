@@ -1,0 +1,410 @@
+@CHARSET "UTF-8";
+*{
+	margin:0;
+	padding:0;
+	font-family:微软雅黑;
+}
+body{
+	background:url(../pic/night5.jpg);
+	background-size:100% 100%; 
+	background-attachment: fixed;
+	font-size:14px;
+	opacity:0.98;
+}
+#head{
+	position:absolute;
+	width:100%;
+	height:60px;
+	color:#fff;
+	border-top:1px solid silver;
+	border-bottom:1px solid silver;
+	padding:1px 0 3px 0;
+}
+#head h2{
+	font-family:微软雅黑;
+	text-align:center;
+	font-family:微软雅黑;
+	height:40px;
+	background:#202020;
+	padding:10px;
+	line-height:34px;
+	border-top:1px solid silver;
+	border-bottom:1px solid silver;
+	font-size:26px;
+}
+#shang{
+	position:relative;
+	top:140px;
+	left:120px;
+	width:80%;
+	height:auto;
+	background:#171717;
+	color:#c0c0c0;
+	border-bottom:2px solid #a5a5a5;
+	padding:20px;
+	font-size:16px;
+}
+#shang ul{
+	list-style-type:none;
+}
+#shang ul li{
+	display:inline;
+	margin:0 50px 0 50px;
+}
+#shang ul li a{
+	color:#9898cf;
+}
+#shang ul li a:hover{
+	color:#cecee8;
+	text-decoration:none;
+}
+
+#middle{
+	padding:34px 0 14px 24px;
+	height:auto;
+	min-height:600px;
+	background:#daede0;
+	width:90%;
+	margin:30px 0 0 60px;
+	font-size:12px;
+}
+.user1{
+	width:1195px;
+	border-bottom:1px solid silver;
+	background:url(../pic/tou2.jpg) no-repeat left center;
+	text-indent:40px;
+	background-size:3%;
+	color:#6d6d6d;
+	padding:20px 0 6px 0;
+	margin:240px 0 0 60px;
+	height:30px;
+	line-height:20px;
+}
+.user1 span{
+	float:right;
+	color:#b3ffb3;
+}
+.user1 h{
+	margin:0 0 0 10px;
+}
+#middle ul{
+	padding:20px 10px 40px 10px;
+	border-bottom:1px solid #9a9a9a;
+	margin:0 0 100px 0;
+}
+#middle ul li{
+	list-style-type:none;
+}
+
+#middle ul li.tou{
+	background:url(../pic/tou2.jpg) no-repeat left center;
+	text-indent:40px;
+	background-size:2%;
+	padding:6px 0 4px 0;
+	height:auto;
+	border-bottom:1px solid #9a9a9a;
+	width:95%;
+	color:#575757;
+	font-size:13px;
+}
+#middle ul li span{
+	float:right;
+}
+#middle ul li.title{
+	margin:20px 0 0 0;
+	padding:0 0 6px 0;
+	font-size:16px;
+	font-weight:bold;
+}
+#middle ul li.title span{
+	font-weight:normal;
+	font-size:13px;
+	color:#616161;
+	margin:0 57px 0 0;
+}
+#middle ul li.content{
+	margin:10px 30px 2px 2px;
+	font-size:13px;
+	color:#0b0c0d;
+}
+#middle ul li.title a{
+	color:#6a6aff;
+	text-decoration:none;
+}
+#middle ul li.title a:hover{
+	color:#693ffc;
+	text-decoration:underline;
+}
+#middle ul li.read{
+	margin:0 0 0 6px;
+	font-size:12px;
+	color:#6b6b6b;
+}
+#middle p a{
+	font-size:16px;
+	color:#8080ff;
+	text-align:center;
+}
+#middle dl{
+	width:300px;
+	margin:20px auto;
+	font-size:13px;
+	color:#474747;
+}
+#middle dl dd{
+	padding:5px 0;
+}
+#middle dl dd input.text{
+	border:1px solid silver;
+	background:#fff;
+	width:200px;
+	height:20px;
+}
+#middle dl dd textarea{
+	border:1px solid silver;
+	background:#fff;
+	width:280px;
+	height:140px;
+}
+#middle dl dd#pass{
+	<!--display:none;-->
+}
+#middle dl dd input.submit{
+	border:1px solid #737373;
+	width:60;
+	height:24px;
+	cursor:pointer;
+	padding:0 0 2px 0;
+	margin:20px 0 0 100px;
+	background:#400000;
+	color:white;
+}
+
+#middle dl.photogo{
+	width:160px;
+	height:160px;
+	text-align:left;
+	border:1px solid #828282;
+	float:left;
+	margin:40px 40px 40px 30px;
+}
+#middle dl.photogo dt{
+	width:110px;
+	height:120px;
+	background-size:100%;
+	margin:0 auto;
+}
+#middle dl.photogo dd{
+	width:160px;
+	text-align:center;
+	margin:0 auto;
+	padding:2px 0;
+	font-size:10px;
+}
+#middle dl.photogo dt img{
+	display:block;
+	padding:10px 0 0 14px;
+	width:120px;
+	height:120px;
+	padding:0;
+}
+#middle dl.photogo dd.photosun{
+	padding:28px 0 0 0;
+}
+
+#middle dl.photogo1{
+	width:260px;
+	height:260px;
+	text-align:left;
+	border:1px solid #828282;
+	float:left;
+	margin:90px 40px 40px 30px;
+}
+#middle dl.photogo1 dt{
+	width:110px;
+	height:120px;
+	background-size:100%;
+	margin:0 0 0 16px;
+}
+#middle dl.photogo1 dd{
+	width:160px;
+	text-align:center;
+	margin:0 auto;
+	padding:2px 0;
+	font-size:10px;
+}
+#middle dl.photogo1 dt img{
+	display:block;
+	padding:10px 0 0 14px;
+	width:200px;
+	height:200px;
+	float:left;
+}
+#middle dl.photogo1 dd{
+	padding:10px 0 0 0;
+}
+#middle dl.photogo1 dd.sun{
+	padding:8px 0 0 0
+}
+.middle11 p{
+	font-size:18px;
+	font-family:微软雅黑;
+}
+.photogo11{
+	margin:15px 0 10px 0;
+}
+.photogo11{
+	text-align:center;
+}
+dd a.photogai{
+	font-size:16px;
+	color:#004080;
+}
+dd a.photogai1{
+	font-size:16px;
+	color:#004080;
+}
+dl photogai11 dd span{
+	font-size:16px;
+}
+
+.rephoto dd{
+	height:auto;
+	width:auto;
+}
+
+
+.rephoto form{
+	position:relative;
+	width:600px;
+	border:2px solid #7d7d7d;
+	padding:4px;
+	font-size:14px;
+	font-weigth:normal;
+}
+
+.rephoto dd div#ubb{
+	padding:0 0 10px 0;
+	width:480px;
+	height:26px;
+	background-image:linear-gradient(to left,#aaf,#eee);
+	border:1px solid silver;
+	border-bottom:none;
+	margin:0;
+}
+.rephoto dd div#ubb img{
+	display:block;
+	float:left;
+	cursor:pointer;
+}
+
+
+.rephoto dd textarea{
+	width:600px;
+	height:400px;
+	background:#fff;
+	overflow-x:scroll;
+	overflow-y:scroll;
+	font-family:微软雅黑;
+	font-size:16px;
+	resize:none;
+	margin:0;
+}
+.rephoto dd label{
+	cursor:pointer;
+}
+
+.rephoto dd div#font{
+	display:none;
+	position:absolute;
+	width:170px;
+	height:50px;
+	background:#eee;
+	border:solid 1px #959595;
+	padding:8px;
+	line-height:20px;
+	top:440px;
+}
+
+.rephoto dd input{
+	color:#6c6cb7;
+}
+.rephoto dd div#font strong{
+	font-weight:normal;
+	background:#fff;
+	border:1px solid #ccc;
+	cursor:pointer;	
+}
+.rephoto dd#q a{
+	text-decoration:none;
+}
+
+#footer3{
+	font-size:14px;
+	text-align:center;
+	color:#000000;
+}
+
+
+
+
+
+
+#subject{
+	position:absolute;
+	top:380px;
+	border:1px solid silver;
+	text-align:center;
+	margin:204px 4px 4px 26px;
+	padding:4px 4px 4px 4px;
+}
+#subject h{
+	font-size:14px;
+}
+#subject a{
+	cursor:pointer;
+}
+#content{
+	position:absolute;
+	top:280px;
+	left:290px;
+	align:center;
+	width:910px;
+	padding:20px 0 0 0;
+}
+#content h{
+	font-size:14px;
+}
+h6{
+	padding:0 0 0 120px;
+	font-weight:normal;
+}
+
+th{
+	padding:6px;
+}
+
+.user11{
+	width:900px;
+	border-bottom:1px solid silver;
+	background:url(../pic/tou2.jpg) no-repeat left center;
+	text-indent:40px;
+	background-size:3%;
+	color:#6d6d6d;
+	padding:20px 0 6px 0;
+	margin:0 0 0 30px;
+	height:30px;
+	line-height:20px;
+}
+.user1 span{
+	float:right;
+	color:#b3ffb3;
+}
+h6#hate{
+	height:0;
+	margin:50px;
+	padding:6px 0 0 0;
+	width:840px;
+	border-bottom:1px solid #c8c8c8;
+}
+

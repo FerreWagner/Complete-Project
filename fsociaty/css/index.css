@@ -1,0 +1,705 @@
+*{
+	padding:0;
+	margin:0;
+	border:0;
+}
+body a{
+	color:#c4c4ff;
+}
+body a:hover{
+	color:#f1f1f8;
+}
+
+body{
+	width:1320px;
+	margin:0 auto;
+	background:url(../pic/ni.png);
+	background-size:100% 100%; 
+	background-attachment: fixed;
+}
+#userr dl.userr1{
+	float:left;
+	font-size:16px;
+	padding:20px;
+	opacity: 0.9; 
+	
+}
+#userr dl.userr1 dd{
+	float:left;
+	padding:16px;
+}
+#userr dl.userr1 dd h4{
+	font-size:14px;
+	font-family:微软雅黑;
+	font-weight:normal;
+}
+
+#userr dl.userr2{
+	float:left;
+	font-size:16px;
+	padding:6px 20px 20px 20px;
+	opacity: 0.9; 
+	
+}
+#userr dl.userr2 dd{
+	float:left;
+	padding:16px;
+}
+#userr dl.userr2 dd h4{
+	font-size:14px;
+	font-family:微软雅黑;
+	font-weight:normal;
+}
+
+#skin{
+	margin:5px 0 5px 0;
+	border-top:1px solid silver;
+	border-bottom:1px solid silver;
+}
+#skin2{
+	margin:5px 0 5px 0;
+	border-top:1px solid silver;
+	border-bottom:1px solid silver;
+}
+#skin3{
+	margin:5px 0 5px 0;
+	border-top:1px solid silver;
+	border-bottom:1px solid silver;
+}
+#dd1{
+	margin:5px 0 5px 0;
+	border-top:1px solid silver;
+	border-bottom:1px solid silver;
+}
+#dd2{
+	margin:5px 0 5px 0;
+	border-top:1px solid silver;
+	border-bottom:1px solid silver;
+}
+#dd3{
+	margin:5px 0 5px 0;
+	border-top:1px solid silver;
+	border-bottom:1px solid silver;
+}
+#dd4{
+	margin:5px 0 5px 0;
+	border-top:1px solid silver;
+	border-bottom:1px solid silver;
+}
+
+a:link{color:#8080C0;
+	text-decoration:none;
+}
+a:active{color:#8080C0;
+	text-decoration:underline;
+}
+a:hover{color:#6699C0;
+	text-decoration:underline;
+}
+a:visited{color:#8080C0;
+	text-decoration:none;
+}
+ye{font-size:2em;
+	font-family:Microsoft YaHei;
+	
+}
+
+.dim{position:absolute;
+	top:70px;
+	left:628px;
+	height:46px;
+	width:688px;
+	BORDER-TOP:6px groove #86e8b7;  
+	BORDER-LEFT: 6px groove #86e8b7; 
+	align:left;
+}
+.dim1{position:absolute;
+	top:82px;
+	left:920px;
+	width:30px;
+	height:30px;	
+}
+.dim2{position:absolute;
+	top:82px;
+	left:970px;
+	width:100px;
+}
+.dim2 a:hover{
+	color:#d7f2ff;
+}
+
+.dim3{position:absolute;
+	top:78px;
+	left:1070px;
+}
+.dim4 a:hover{
+	color:#d7f2ff;
+}
+.dim4{position:absolute;
+	top:83px;
+	left:1109px;
+	color:#fff;
+	width:140px;
+}
+.dim5{position:absolute;
+	top:83px;
+	left:1260px;
+}
+#header{
+	background:#8d8d8d;
+	height:60px;
+	border:1px solid silver;
+}
+
+#midd{
+	text-align:center;
+	width:626px;
+	height:46px;
+	float:left;	
+	BORDER-RIGHT:4px groove #86e8b7;
+	BORDER-TOP: 4px groove #86e8b7;
+	BACKGROUND: transprant; 
+	BORDER-LEFT: 4px groove #86e8b7;
+	WIDTH: 100%; 
+	BORDER-BOTTOM: 10px groove #86e8b7;
+	align:left;
+	margin:0 0 0 0;
+}
+
+ul{
+	font-family:微软雅黑;
+}
+#midd ul{
+	padding:0 0 0 0;
+}
+#midd ul li{
+	display:inline;
+}
+
+#le{
+	position:absolute;
+	top:160px;
+	width:210px;
+	height:660px;
+	opacity: 0.8; 
+	float:left;
+	color:#9393ff;
+	margin:0 0 0 14px;
+	border:1px solid silver;
+	
+}
+#le a:hover{
+	color:#ffffff;
+}
+#le dd{
+	color:#6fb9b9;
+	font-size:14px;
+}
+#le dd.xiafang{
+	margin:20px 0 0 0;
+}
+#le a{
+	color:#ffffff;
+}
+
+#lef h{
+	font-size:20px;
+	font-family:微软雅黑;
+}
+#lef li{
+	text-indent:50px;
+	list-style-type:none;
+}
+#mid{
+	position:absolute;
+	width:370px;
+	height:450px;
+	margin:90px 0 0 240px;
+	background-color:rgba(0,0,0,0.1);
+	border:1px solid #a1a1a1;
+}
+#mid img{
+	display:block;
+	margin:10px 10px 2px 20px;
+}
+#rig{
+	width:660px;
+	height:870px;
+	border:1px solid silver;
+	margin:30px 20px 0 0;
+	float:right;
+	opacity:0.66;
+	background:url(../pic/cello.png) no-repeat center;
+	background-size:34%;
+}
+
+
+#rig h6{
+	background:black;
+}
+#rig a:hover{
+	color:#ffffff;
+}
+#rig ul.article{
+	padding:30px 10px 0 15px;
+}
+#rig ul.article h{
+	font-size:14px;
+}
+#rig ul.article li{
+	list-style-type:none;
+	height:38px;
+	line-height:38px;
+	border-bottom:1px solid #333;
+	margin:6px 0 0 0;
+}
+#rig ul.article li a{
+	color:#bdbdff;
+}
+#rig ul.article li a:hover{
+	color:#ffffff;
+}
+#rig ul.article li em{
+	float:right;
+	font-style:normal;
+	text-align:left;
+	font-size:14px;
+}
+#rig ul.article a h1{
+	font-size:14px;
+	font-weight:normal;
+}
+#rig ul.article li em h{
+	font-size:10px;
+	color:#b3b3b3;
+	text-align:left;
+}
+#mid ul li{
+	list-style-type:none;
+	height:38px;
+	line-height:38px;
+	border-bottom:1px solid #333;
+	margin:6px 0 0 0;
+	font-size:10px;
+}
+#mid li em{
+	float:right;
+	font-style:normal;
+	text-align:left;
+	font-size:10px;
+	padding: 0 12px 0 0;
+
+}
+#mid a h1{
+	font-size:11px;
+	font-weight:normal;
+	color:#8a8aff;
+}
+#mid a:hover h1{
+	color:#d2d2ff;
+}
+
+#mid li em h{
+	font-size:11px;
+	color:#8a8a8a;
+	text-align:left;
+	font-style:normal;
+	text-align:left;
+}
+#mid li.picrig1{
+	background:url(../pic/music/1.jpg) no-repeat left center;
+	background-size:6%;
+	padding:0 0 0 30px;
+}
+.music{
+	padding:0 0 0 8px;
+}
+
+#mid1 ul li{
+	list-style-type:none;
+	height:38px;
+	line-height:38px;
+	border-bottom:1px solid #333;
+	margin:6px 0 0 0;
+	font-size:10px;
+}
+#mid1 li em{
+	float:right;
+	font-style:normal;
+	text-align:left;
+	font-size:12px;
+	padding: 0 12px 0 0;
+
+}
+#mid1 a h1{
+	font-size:12px;
+	font-weight:normal;
+	color:#8a8aff;
+}
+#mid1 a:hover h1{
+	color:#d2d2ff;
+}
+#mid1 li em h{
+	color:#8a8a8a;
+	text-align:left;
+	font-style:normal;
+	text-align:left;
+}
+#mid1 li.picrig2{
+	background:url(../pic/music/2.jpg) no-repeat left center;
+	background-size:5%;
+	padding:0 0 0 32px;
+}
+.music1{
+	padding:0 0 0 12px;
+}
+
+#mid2 ul li{
+	list-style-type:none;
+	height:38px;
+	line-height:38px;
+	border-bottom:1px solid #333;
+	margin:6px 0 0 0;
+	font-size:10px;
+}
+#mid2 li em{
+	float:right;
+	font-style:normal;
+	text-align:left;
+	font-size:12px;
+	padding: 0 12px 0 0;
+
+}
+#mid2 a h1{
+	font-size:12px;
+	font-weight:normal;
+	color:#8a8aff;;
+}
+
+#mid2 a:hover h1{
+	color:#d2d2ff;
+}
+
+#mid2 li em h{
+	color:#8a8a8a;
+	text-align:left;
+	font-style:normal;
+	text-align:left;
+}
+#mid2 li.picrig3{
+	background:url(../pic/music/3.jpg) no-repeat left center;
+	background-size:5%;
+	padding:0 0 0 32px;
+}
+.music2{
+	padding:0 0 0 12px;
+}
+
+#rig1 ul li{
+	list-style-type:none;
+	height:38px;
+	line-height:38px;
+	border-bottom:1px solid #333;
+	margin:6px 0 0 0;
+	font-size:10px;
+}
+#rig1 li em{
+	float:right;
+	font-style:normal;
+	text-align:left;
+	font-size:12px;
+	padding: 0 12px 0 0;
+
+}
+#rig1 a h1{
+	font-size:12px;
+	font-weight:normal;
+}
+#rig1 li em h{
+	color:#8a8a8a;
+	text-align:left;
+	font-style:normal;
+	text-align:left;
+}
+#rig1 li.picrig4{
+	background:url(../pic/music/4.jpg) no-repeat left center;
+	background-size:6%;
+	padding:0 0 0 32px;
+}
+.music3{
+	padding:0 0 0 12px;
+}
+
+#rig2 ul li{
+	list-style-type:none;
+	height:38px;
+	line-height:38px;
+	border-bottom:1px solid #333;
+	margin:6px 0 0 0;
+	font-size:10px;
+}
+#rig2 li em{
+	float:right;
+	font-style:normal;
+	text-align:left;
+	font-size:12px;
+	padding: 0 12px 0 0;
+
+}
+#rig2 a h1{
+	font-size:12px;
+	font-weight:normal;
+}
+#rig2 li em h{
+	color:#8a8a8a;
+	text-align:left;
+	font-style:normal;
+	text-align:left;
+}
+#rig2 li.picrig5{
+	background:url(../pic/music/5.jpg) no-repeat left center;
+	background-size:6%;
+	padding:0 0 0 32px;
+}
+.music4{
+	padding:0 0 0 0;
+}
+
+
+
+#rig ul.article li.picrig1{
+	background:url(../pic/music/1.jpg) no-repeat left center;
+	background-size:4%;
+	padding:0 0 0 40px;
+}
+#rig ul.article li.picrig2{
+	background:url(../pic/music/2.jpg) no-repeat left center;
+	background-size:4%;
+	padding:0 0 0 40px;
+}
+#rig ul.article li.picrig3{
+	background:url(../pic/music/3.jpg) no-repeat left center;
+	background-size:4%;
+	padding:0 0 0 40px;
+}
+#rig ul.article li.picrig4{
+	background:url(../pic/music/4.jpg) no-repeat left center;
+	background-size:4%;
+	padding:0 0 0 40px;
+}
+#rig ul.article li.picrig5{
+	background:url(../pic/music/5.jpg) no-repeat left center;
+	background-size:4%;
+	padding:0 0 0 40px;
+}
+#rig ul.article li.picrig6{
+	background:url(../pic/music/6.jpg) no-repeat left center;
+	background-size:4%;
+	padding:0 0 0 40px;
+}
+#rig ul.article li.picrig7{
+	background:url(../pic/music/7.jpg) no-repeat left center;
+	background-size:4%;
+	padding:0 0 0 40px;
+}
+#rig ul.article li.picrig8{
+	background:url(../pic/music/8.jpg) no-repeat left center;
+	background-size:4%;
+	padding:0 0 0 40px;
+}
+#rig ul.article li.picrig9{
+	background:url(../pic/music/9.jpg) no-repeat left center;
+	background-size:4%;
+	padding:0 0 0 40px;
+}
+#rig ul.article li.picrig10{
+	background:url(../pic/music/10.jpg) no-repeat left center;
+	background-size:4%;
+	padding:0 0 0 40px;
+}
+#rig ul.article li.picrig11{
+	background:url(../pic/music/11.jpg) no-repeat left center;
+	background-size:4%;
+	padding:0 0 0 40px;
+}
+#rig ul.article li.picrig12{
+	background:url(../pic/music/12.jpg) no-repeat left center;
+	background-size:4%;
+	padding:0 0 0 40px;
+}
+#rig ul.article li.picrig13{
+	background:url(../pic/music/13.jpg) no-repeat left center;
+	background-size:4%;
+	padding:0 0 0 40px;
+}
+#rig ul.article li.picrig14{
+	background:url(../pic/music/14.jpg) no-repeat left center;
+	background-size:4%;
+	padding:0 0 0 40px;
+}
+#rig ul.article li.picrig15{
+	background:url(../pic/music/15.jpg) no-repeat left center;
+	background-size:4%;
+	padding:0 0 0 40px;
+}
+#rig ul.article li.picrig16{
+	background:url(../pic/music/16.jpg) no-repeat left center;
+	background-size:4%;
+	padding:0 0 0 40px;
+}
+#rig ul.article li.picrig17{
+	background:url(../pic/music/17.jpg) no-repeat left center;
+	background-size:4%;
+	padding:0 0 0 40px;
+}
+#mid1{
+	position:absolute;
+	width:370px;
+	height:400px;
+	border:1px solid silver;
+	float:left;
+	margin:560px 0 0 240px;
+	BORDER-RIGHT:1px groove #c8c8c8;
+	BORDER-TOP: 1px groove #c8c8c8;
+	BORDER-LEFT: 1px groove #c8c8c8;
+	BORDER-BOTTOM: 1px groove #c8c8c8;
+}
+#mid2{
+	width:370px;
+	height:360px;
+	border:1px solid silver;
+	float:left;
+	margin:920px 0 0 240px;
+
+}
+#rig1{
+	width:320px;
+	height:360px;
+	border:1px solid silver;
+	float:right;
+	margin:20px 20px 0 10px;
+}
+#rig2{
+	width:320px;
+	height:360px;
+	border:1px solid silver;
+	margin:20px 10px 0 0;
+	float:right;
+}
+#lef{
+	position:absolute;
+	width:205px;
+	height:470px;
+	border:1px solid silver;
+	margin:870px 0 0 14px;
+	color:#dae7e6;
+}
+#lef dd a{
+	color:#d8e4e3;
+}
+#lef a:hover{
+	color:#fff;
+}
+#ad{
+	width:660px;
+	height:150px;
+	border:1px solid silver;
+	margin:10px 20px 0 0;
+	float:right;
+}
+#ad1{
+	width:590px;
+	height:150px;
+	border:1px solid silver;
+	margin:10px 0 0 14px;
+	float:left;
+}
+
+
+#userr{
+	width:740px;
+	height:800px;
+	border:1px solid silver;
+	margin:14px 0 0 40px;
+	float:left;
+	
+}
+ #tabs3 { float:left; width:100%; background:#306161;  font-size:100%; line-height:normal; }
+#tabs3 ul { margin:0; padding:20px 10px 0 50px; list-style:none; }
+#tabs3 li { display:inline; margin:5px 0 5px 0; padding:5px 0 5px 0; }
+#tabs3 a { float:left; background:url("../pic/images/tableft3.gif") no-repeat left top; margin:0; padding:0 0 0 4px; text-decoration:none; }
+#tabs3 a span { float:left; display:block; background:url("../pic/images/tabright3.gif") no-repeat right top; padding:5px 15px 4px 6px; color:#c8ffc1; }
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+    #tabs3 a span { float:none; }
+/* End IE5-Mac hack */
+    #tabs3 a:hover span { color:#a2e6e8; }
+#tabs3 a:hover { background-position:0% -42px; }
+#tabs3 a:hover span { background-position:100% -42px; }
+
+#footer{
+	clear:both;
+	width:auto;
+	height:60px;
+	text-align:center;
+	margin:40px 0 0 0;
+}
+#footer p{
+	font-size:12px;
+	padding:10px 0 0 0;
+}
+h6#h7{
+	background:#306161;
+	color:#aaffd5;
+	opacity:0.8;
+	box-shadow: 0px 0px 15px #00172f;
+}
+h5{
+	font-family:微软雅黑;
+	padding:10px;
+	font-size:20px;
+}
+#userl{
+	border:2px solid silver;
+	font-size:12px;
+	margin:10px 0 0 10px;
+	width:480px;
+	height:700px;
+	border:1px solid silver;
+	margin:20px 0 0 14px;
+	float:left;
+}
+#userl h2{
+	text-indent:0;
+	text-align:center;
+}
+#userl dl{
+	width:150px;
+	float:left;
+	margin:10px 10px 10px 10px;
+	padding:0 0 0 20px;
+	padding-right:40px;
+	padding-left:20px;
+	border:1px solid #a6b98c;
+	color:#a6ffff;
+}
+#userl dl dt{
+	width:150px;
+}
+#userl dl dt img{
+	margin:0 auto;
+	display:block;
+	width:140px;
+}
+#userl dl dd{
+	margin:10px 0 0 -8px;
+	text-align:center;
+	height:30px;
+	line-height:20px;
+	float:left;
+}
+#userl dl dd.user{
+	width:150px;
+	float:none;
+	color:#9393ff;
+}
+

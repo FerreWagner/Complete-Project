@@ -1,0 +1,50 @@
+@CHARSET "UTF-8";
+body{
+	width:1300px;
+	color:silver;
+	background:#180c0c;
+}
+#newuser{
+	width:1300px;
+	height:1000px;
+	border:2px solid silver;
+	font-size:12px;
+	background-color:#180c0c;
+	color:sivler;
+}
+#newuser h2{
+	text-indent:0;
+	text-align:center;
+}
+#newuser dl{
+	width:150px;
+	float:left;
+	margin:60px 40px 20px 0;
+	padding:0 0 0 20px;
+	padding-right:40px;
+	padding-left:20px;
+	border:1px solid #b382e3;
+}
+#newuser dl dt{
+	width:150px;
+}
+#newuser dl dt img{
+	margin:0 auto;
+	display:block;
+	width:140px;
+}
+#newuser dl dd{
+	margin:10px 0 0 -8px;
+	text-align:center;
+	height:30px;
+	line-height:20px;
+	float:left;
+}
+#newuser dl dd.user{
+	width:150px;
+	float:none;
+	color:silver;
+}
+a{
+	cursor:pointer;
+}
